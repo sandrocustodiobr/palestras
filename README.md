@@ -18,7 +18,7 @@ Material usado em palestras e oficinas:
   <tr>
     <td>
       2018
-    
+    </td>
     <td>
       Git para Desenvolvedores
     </td>
@@ -29,7 +29,7 @@ Material usado em palestras e oficinas:
   
   <tr>
     <td>
-      
+    </td>
     <td>
       Criando seu script de backup
     </td>
