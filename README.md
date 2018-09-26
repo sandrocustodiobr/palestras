@@ -41,4 +41,4 @@ Material usado em palestras e oficinas:
   
 </table>
 
-<a href="\https://github.com/sandrocustodiobr/palestras/">LINK</a> deste projeto.
+<a href="https://github.com/sandrocustodiobr/palestras/">LINK</a> deste projeto.
