@@ -41,4 +41,3 @@ Material usado em palestras e oficinas:
   
 </table>
 
-2018 
