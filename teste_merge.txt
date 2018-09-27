@@ -1,7 +1,9 @@
+
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
+teste de merge REMOTO
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
@@ -9,16 +11,14 @@ texto texto texto texto texto texto texto
 texto texto texto texto texto texto texto 
 teste de merge linha LOCAL 
 texto texto texto texto texto texto texto 
+teste de merge REMOTO com conflito
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
- 
 texto texto texto texto texto texto texto 
- 
- 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
