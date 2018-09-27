@@ -7,6 +7,7 @@ texto texto texto texto texto texto texto
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
+teste de merge linha LOCAL 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
@@ -14,12 +15,10 @@ texto texto texto texto texto texto texto
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
+ 
 texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto 
+ 
+ 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
 texto texto texto texto texto texto texto 
