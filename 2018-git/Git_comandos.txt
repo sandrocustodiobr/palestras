@@ -1,0 +1,231 @@
+
+CONFIGURAÇÃO:
+
+git config --global user.name "Fulano de Tal"
+
+gti config --global user.email "asd@asd.com"
+
+git init
+
+USO LOCAL:
+
+git status
+
+git add .||nome||mascara
+
+git commit -m "Commit inicial"
+
+git commit -a -m "Novas alterações" (-a = add)
+
+
+
+# mostrar alteraÃ§Ãµes antes do commit
+
+git status
+git diff		# mostra alterações feitas recentemente nos arquivos (antes de fazer o add para a stage area)
+git add .
+git diff		# agora vem vazio
+
+git diff --staged	# mostra as aterações do que foi adicionado mas ainda nÃ£o comitado
+git commit -m "..."	# incorpora as alteraÃ§Ãµes
+
+
+
+
+# vendo/listando os commits
+
+git log				# mostra com info basicas
+git log -p			# mostra detalhado (com diff)
+git log -p -1			# mostra detalhado (com diff) (-n = num. de commints a ser mostrados)
+
+gitk 				# GUI (ambiente grafico) para mostrar os diffs dos commits
+
+git log --pretty=oneline	# mostra info bem resumida, apenas em uma linha
+
+
+
+
+
+# editar o commit mais recente que vecÃª fez
+
+... editar arquivos com o que faltava fazer ...
+git add .
+git commit --amend -m "Descricao anterior (edicao)" 	# o "(edicao)" indica que foi corrigido
+git log --pretty=oneline				# comferindo alterÃ§Ã£o da descriÃ§Ã£o
+
+
+
+
+
+
+
+# arquivo adicionado em querer na stage area
+
+... criado um arquivo que não deve ser monitorado no projeto ...
+git add .
+git status
+(aparece o arquivo como novo)
+git reset HEAD (nome arquivo)		# removendo o arquivo da stage area
+
+
+
+
+
+
+# ignorando alterações feitas num arquivo 
+
+git checkout -- (nome do arquivo)	# restaurando do conteudo anterior desde arquivo do ultimo commit
+
+
+
+
+
+
+
+
+# removendo um arquivo do repositorio local
+... remover do working directory ...
+git add .		# vai avisar da remoÃ§Ã£o
+git rm (nome arquivo)	# retira do projeto
+git commit -m "Arquivo xyz removido"
+
+
+
+
+
+
+======================= TAGS ==================================
+
+(tags são etiquetas mais simples que o id de cada commit e funcionam dentro do branch atual)
+
+git tag 					# lista tags
+
+git tag -a v1.0 -m "Versao 1.0" 		#cria uma tag no commit atual
+
+git log --pretty=oneline			#lista commits
+
+git tag -a v0.0 (id do commit emq questão) -m "VersÃ£o 0.0 (inicio do projeto)" 
+
+
+git tag			# lista as tags
+
+git show v0.0		# mostra detalhes da tag
+
+
+git checkout v0.0	# deixa os arquivos atuais na versÃ£o definida pela tag
+
+git checkout master	# volta arquivos ao padrÃ£o atual do sistema
+
+
+
+
+
+
+
+============================== BRANCHS ===================================
+
+git branch teste		# cria o branch
+
+git checkout teste		# passa para o branch teste (sai do master)
+
+
+
+git checkout -b teste		# cria o branch teste jÃ¡ fazendo o checkout (entrando) nele e saindo do master
+
+
+
+
+
+
+# para sair do branch teste e voltar ao master
+git status
+git commit -a -m "ponto de commit para poder voltar depois" # ou informar o que foi feito atÃ© o momento como "funcoes basicas"
+git checkout master
+
+# depois, para voltar ao teste e continuar o trabalho
+git checkout teste
+
+
+
+
+
+
+# trazendo as alterações do branch de teste para o branch master (unifincando no master)
+git checkout master
+git merge teste		# traz as alteracoes de teste para master
+git branch -d teste	# caso nÃ£o precise mais trabalhar no branch teste, podemos apaga-lo
+
+
+
+
+# em caso de conflito ao fazer merge
+git checkout -b teste2		# cria novo merge e faz checkout nele
+... alterar um arquivo em deteminaas linhas ...
+git commit -a -m "bug em x e y corrigido, agora com parametro $ID"
+
+... enquanto isso, outro colega no branch master ...
+(git checkout master)
+... altera o mesmo arquivo quase nas mesmas linhas ...
+git commit -a -m "bug em x e z corrigido, agora com verif. de $valor"
+
+... quando você tenta fazer merge (unificar) com master ...
+(git checkout master)
+git merge teste2	# ele faz o merge mas vai informar que hÃ¡ conflitos
+... no código fonte onde hÃ¡ conflitos, o git insere ambas as versÃµes das linhas com os devidos comentÃ¡rios ...
+... e você edita diretamente no código fonte para deixar apenas a versão que vai ficar ...
+
+# commit dos arquivos já sem os conflitos (isto já no master, após o merge)
+git commit -a -m "bug em x, y e z corrigido, agora com parametro $ID e verif. de $valor"  
+
+
+
+
+
+# criando o repositorio central numa pasta 
+
+cd pasta
+
+git init --bare
+
+
+
+
+
+
+# da primeira estação de trabalho, clonar o repositorio
+
+git clone file:////vmwindows/pasta/nomeprojeto nomelocaldoprojeto	# exemplo usando vm windows
+... ou ...
+git clone /caminho/ate/a/pasta nomelocaldoprojeto			# formato generico
+
+git push origin master			# envia arquivos para o repositorio remoto padrão (origin) (pegando do branch master)
+
+
+
+
+
+
+# noutra estação de trabalho
+
+git clone /caminho/ate/a/pasta nomelocaldoprojeto
+
+git pull origin master 			# na primeira vez
+
+# noutras vezes
+git fetch origin (nome branch)		# ....
+.. ou ..
+git push origin (branch)
+
+
+
+
+
+
+################# linkando maquina nova ##############
+
+git init
+git remote add origin caminho_do_repositorio
+git pull origin master
+
+
+
