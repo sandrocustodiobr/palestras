@@ -1,0 +1,33 @@
+outras ferramentas 	= tar e rsync
+explorando built-ins 	= comandos internos
+variáveis		= origem, destino, etc.
+loops			= for, while,
+condicionais		= if, case,
+funções			= foo(){}
+
+================================
+
+Em /dados/palestras
+
+$ tar -cvf github_palestras.tar github_palestras/
+
+$ gzip github_palestras.tar 
+
+=================================
+
+compacta()
+{
+tar -cvf ${arquivo} ${origem}
+gzip ${arquivo}
+}
+
+arquivo=github_palestras.tar
+origem=github_palestras/
+compacta
+
+if [ -d github_palestras/ ]; then echo "diretorio"; fi
+diretorio
+
+while lendo nomes de arquivo
+
+

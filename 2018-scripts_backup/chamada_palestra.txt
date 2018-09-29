@@ -1,0 +1,10 @@
+
+Criando seu script de backup
+O Bourne-again Shell ou apenas Bash é um poderoso interpretador de comandos presente em praticamente todas distribuições Linux e em vários outros sistemas operacionais como UNIX, OSX, Windows etc. Nesta apresentação veremos como construir um script para automação de backups utilizando o Bash e outras ferramentas, explorando built-ins, variáveis, loops, condicionais, funções e outros recursos deste fantástico interpretador de comandos.
+
+Sandro Custódio
+Servidor Público da Justiça Federal com mais de 20 anos de TI, foco no Suporte a usuários, pitadas de infra e mais recentemente retornando ao desenvolvimento. Seu primeiro contato com Linux foi em 2003, e desde 2012 usa apenas Linux em casa. Já administrou UNIX e nos dias de hoje utiliza Ubuntu, Debian, Mint e CentOS. Tem como hobbies: Moto viagens, fotografia e astronomia.
+
+Tchelinux Bagé 2018
+09:30
+
