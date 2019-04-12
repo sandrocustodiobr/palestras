@@ -1,0 +1,142 @@
+Ver situação/status dos arquivos
+$ git status
+
+
+Adicionando arquivos para o próximo commit, colocando-os na staging area.
+$ git add <arquivos>
+
+
+(O commit salva suas alterações no repositório local)
+
+# Commita os arquivos adicionados na staging area pelo git add
+# Vai pedir a mensagem de commit abrindo um editor de textos
+# Vantagem: Permite um texto extra além da mensagem, conveniente em commits muito relevantes
+$ git commit 			
+
+# Commita os arquivos adicionados na staging area pelo git add
+# Comita usando a mensagem entre aspas
+$ git commit -m “Primeiro commit do projeto.”
+
+# Mesmo que o anterior, mas o "a" faz o add de todas as alterações no working diectory.
+$ git commit -am “Primeiro commit do projeto.”
+
+Vendo diferenças
+$ git diff ...
+
+Vendo histórico de commits
+$ git log ...
+
+Vendo graficamente o histórico
+$ gitk
+
+# removendo um arquivo do repositorio local
+Após, apagar o arquivo no working directory ...
+$ git add .				# vai avisar da remoção
+$ git rm (nome arquivo)	# retira do projeto, o arquivo deixa de ser monitorado.
+$ git commit -m "Arquivo xyz removido"
+
+Tags (dar nome específico ao commit anterior)
+$ git tag v1.0 (o nome que você escolher)
+$ git show v1.0   # mostra tag
+
+###############################################
+# Branchs
+#
+
+# cria o branch
+$ git branch teste		
+
+# passa para o branch teste (sai do master)
+$ git checkout teste		
+
+# cria o branch teste já fazendo o checkout
+$ git checkout -b teste	
+
+# para sair do branch teste e voltar ao master
+$ git status
+
+# ou informar o que foi feito até o momento como "funcoes basicas"
+$ git commit -a -m "ponto de commit para poder voltar depois" 
+$ git checkout master
+
+# depois, para voltar ao teste e continuar o trabalho
+$ git checkout teste
+
+###############################################
+# Trazendo as alterações do branch de teste para o branch master (unifincando no master)
+#
+
+# vai para o master
+$ git checkout master
+
+# traz as alteracoes de teste para master
+$ git merge teste		
+
+# caso não precise mais trabalhar no branch teste, podemos apaga-lo
+$ git branch -d teste	
+
+###############################################
+# Repositórios
+#
+
+# da primeira estação de trabalho, clonar o repositório
+$ git clone https://github.com/projeto 	nome_projeto
+... ou ...
+$ git clone file:////vmwindows/pasta/nomeprojeto nomelocaldoprojeto # exemplo usando vm windows
+... ou ...
+$ git clone /caminho/ate/a/pasta nomelocaldoprojeto 	# para uma pasta (talvez pendrive)
+
+
+# trazer atualizações dos outros do repositorio remoto
+# padrao (origin) (pegando do branch master)
+
+$ git pull origin master 	
+
+(se necessário, troque origin pelo nome de repositório que você definiu)
+(se necessário, troque master pelo branch que estiver trabalhando)
+(da segunda vez em diante origin e master não precisam ser repetidos)
+
+
+# envia arquivos para o repositorio remoto padrao (origin) (pegando do branch master)
+$ git push origin master	
+(dicas do pull valem aqui também)
+
+# noutra estação de trabalho
+
+git clone /caminho/ate/a/pasta nomelocaldoprojeto
+git pull origin master 			# na primeira vez
+
+
+# linkando maquina nova
+git init
+git remote add origin /media/custodio/backup_siteTau/siteTau.git/
+git pull origin master
+
+
+# util para atualizar apenas os HEADs 
+# de um branch sem atualizar os arquivos
+$ git fetch origin (nome branch)
+
+	
+
+###############################################
+# 
+#
+
+###############################################
+# 
+#
+
+###############################################
+# 
+#
+
+###############################################
+# 
+#
+
+###############################################
+# 
+#
+
+
