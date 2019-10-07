@@ -1,10 +1,23 @@
 Ver situação/status dos arquivos
 $ git status
 
+###############################################
+# Staging Area
+#
 
 Adicionando arquivos para o próximo commit, colocando-os na staging area.
 $ git add <arquivos>
 
+$ git add nome_arquivo
+
+$ git add nome_arquivo nome_outro_arquivo nome_mais_um_arquivo
+
+$ git add nome_pasta/
+
+
+###############################################
+# Commit
+#
 
 (O commit salva suas alterações no repositório local)
 
@@ -118,10 +131,6 @@ git pull origin master
 $ git fetch origin (nome branch)
 
 	
-
-###############################################
-# 
-#
 
 ###############################################
 # 
