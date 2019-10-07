@@ -4,7 +4,7 @@ Material usado em palestras e oficinas:
 <table>
   <tr>
     <td>2019</td>
-    <td>Git para projetosa cadêmicos</td>
+    <td>Git para projetos acadêmicos</td>
     <td>Tchelinux (Alegrete e Bagé)</td>
   </tr>
 
