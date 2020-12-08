@@ -1,0 +1,15 @@
+# dica original para que o prompt do bash mostre o branch do Git
+
+PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
+
+# as linhas abaixo são do arquivo .bashrc no Ubuntu para que o promt seja sensível ao branch do Git 
+
+if [ "$color_prompt" = yes ]; then
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+else
+    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $(__git_ps1 " (%s)")\$ '
+fi
+
+
