@@ -3,6 +3,13 @@ Material usado em palestras e oficinas:
 
 <table>
   <tr>
+    <td>2020</td>
+    <td>Git para pequenos projetos</td>
+    <td><a href="https://live.tchelinux.org/">Tchelinux Live 2020</a></br>
+	(<a href="https://www.youtube.com/channel/UCs13WCSCDmQTNcPlt5XxKYw">canal do Tchelinux no Youtube</a>)</br>
+	(<a href="https://www.youtube.com/watch?v=KWYkBbdLpHU">vídeo da palestra</a>)</td>
+  </tr>
+  <tr>
     <td>2019</td>
     <td>Git para projetos acadêmicos</td>
     <td>Tchelinux (Alegrete e Bagé)</td>
