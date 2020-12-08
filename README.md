@@ -5,9 +5,7 @@ Material usado em palestras e oficinas:
   <tr>
     <td>2020</td>
     <td>Git em pequenos projetos</td>
-    <td><a href="https://live.tchelinux.org/">Tchelinux Live 2020</a></br>
-	(<a href="https://www.youtube.com/channel/UCs13WCSCDmQTNcPlt5XxKYw">canal do Tchelinux no Youtube</a>)</br>
-	(<a href="https://www.youtube.com/watch?v=KWYkBbdLpHU">vídeo da palestra</a>)</td>
+    <td><a href="https://live.tchelinux.org/">Tchelinux Live 2020</a> (<a href="https://www.youtube.com/channel/UCs13WCSCDmQTNcPlt5XxKYw">canal Tchelinux</a>) (<a href="https://www.youtube.com/watch?v=KWYkBbdLpHU">ver palestra</a>)</td>
   </tr>
   <tr>
     <td>2019</td>
